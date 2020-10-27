@@ -21,6 +21,5 @@ btn_cerrar.addEventListener('click', e => {
     } else {
         nav2.classList.remove('navegacion-activa');
         nav2.classList.add('navegacion');
-        navegacion.style.animation = 'menu2 1s ease-out';
     }
 })
