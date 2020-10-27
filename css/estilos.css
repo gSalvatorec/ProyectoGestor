@@ -2,6 +2,7 @@ html {
     box-sizing: border-box;
     font-size: 62.5%;
     /*1rem==10px*/
+    scroll-behavior: smooth;
 }
 
 *,
@@ -205,4 +206,12 @@ h6 {
     0% {
         transform: translate(-100%);
     }
+}
+
+
+/* Seccion nosotros */
+
+.nosotros {
+    height: 100vh;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
 }
