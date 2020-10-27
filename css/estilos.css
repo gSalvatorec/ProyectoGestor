@@ -155,25 +155,15 @@ h6 {
 }
 
 @media (min-width:699px) {
-    #cerrar {
-        display: none;
-    }
-    .navegacion {
-        display: inline;
+    .menu {
+        flex-direction: row;
     }
     .navegacion a {
-        color: white;
-        font-size: 1.5rem;
-        text-decoration: none;
-        font-weight: 300;
-        padding-right: 1rem;
+        display: inline;
+        padding: 0 1.5rem;
     }
     .navegacion a:last-of-type {
         padding-right: 0;
-    }
-    .menu {
-        align-items: center;
-        padding-top: 1rem;
     }
 }
 
@@ -181,6 +171,53 @@ h6 {
 /* Seccion nosotros */
 
 .nosotros {
-    height: 100vh;
     background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.contenido-nosotros {
+    flex-grow: 1;
+}
+
+.imagen-nosotros {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+.texto-nosotros {
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+.texto-nosotros h1 {
+    color: white;
+    font-weight: 400;
+}
+
+.texto-nosotros p {
+    color: white;
+    font-weight: 100;
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+.nosotros-imagenes {
+    flex-grow: 1;
+}
+
+.texto-contenido {
+    text-align: center;
+    color: white;
+}
+
+.texto-contenido h2 {
+    font-weight: 400;
+}
+
+.texto-contenido p {
+    font-weight: 100;
+    font-size: 1.5rem;
 }
