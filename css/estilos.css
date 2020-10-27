@@ -68,7 +68,7 @@ h6 {
 .imagen {
     width: 90%;
     position: absolute;
-    bottom: 10rem;
+    bottom: 1rem;
 }
 
 .texto-imagen {
@@ -77,8 +77,20 @@ h6 {
     margin: 0 auto;
     position: absolute;
     width: 70%;
-    bottom: 35rem;
+    bottom: 25rem;
     left: 5rem;
+}
+
+@media (min-width:768px) {
+    .imagen {
+        width: 50%;
+        right: 1rem;
+    }
+    .texto-imagen {
+        width: 40%;
+        left: 15rem;
+        bottom: 25rem;
+    }
 }
 
 .texto-imagen h1 {
