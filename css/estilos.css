@@ -60,11 +60,15 @@ h6 {
     height: 100vh;
 }
 
+.contenedor-imagen {
+    width: 100%;
+    margin: 0 auto;
+}
+
 .imagen {
-    width: 50%;
+    width: 90%;
     position: absolute;
-    bottom: 1rem;
-    right: 2rem;
+    bottom: 10rem;
 }
 
 .texto-imagen {
@@ -72,9 +76,9 @@ h6 {
     color: white;
     margin: 0 auto;
     position: absolute;
-    width: 50rem;
-    bottom: 25rem;
-    left: 15rem;
+    width: 70%;
+    bottom: 35rem;
+    left: 5rem;
 }
 
 .texto-imagen h1 {
