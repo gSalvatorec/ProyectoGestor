@@ -172,8 +172,9 @@ h6 {
 
 .nosotros {
     background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    min-height: 100vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-direction: column;
 }
 
@@ -204,6 +205,17 @@ h6 {
     line-height: 1.5;
 }
 
+@media (min-width:768px) {
+    .nosotros {
+        flex-direction: column;
+    }
+    .contenido-nosotros {
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(2, 50%);
+    }
+}
+
 .nosotros-imagenes {
     flex-grow: 1;
 }
@@ -220,4 +232,39 @@ h6 {
 .texto-contenido p {
     font-weight: 100;
     font-size: 1.5rem;
+}
+
+@media (min-width:768px) {
+    .nosotros-imagenes {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .imagen-contenido {
+        flex-basis: calc(33.3% - 2rem);
+    }
+}
+
+@keyframes m1 {
+    0% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes m2 {
+    0% {
+        transform: translateY(100%);
+    }
+}
+
+@keyframes m3 {
+    0% {
+        transform: translateX(100%);
+    }
+}
+
+#img1,
+#img2,
+#img3 {
+    opacity: 0;
 }
